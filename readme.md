@@ -30,6 +30,41 @@ A modern personal finance application built with FastAPI and Next.js that helps 
 - Node.js 16+
 - Plaid API credentials
 
+### Getting Plaid Credentials
+
+1. **Create a Plaid Account**
+   - Visit [Plaid Dashboard](https://dashboard.plaid.com/signup)
+   - Sign up for a developer account
+   - Choose the appropriate plan (Sandbox is free for development)
+
+2. **Get API Credentials**
+   - Log in to your Plaid Dashboard
+   - Navigate to Team Settings > API > All Keys
+   - You'll find your:
+     - Client ID
+     - Sandbox Secret
+     - Development Secret (if applicable)
+     - Production Secret (if approved)
+
+3. **Configure Environment**
+   - Create a `.env` file in your project root
+   - Add your credentials:
+   ```env
+   PLAID_CLIENT_ID=your_client_id
+   PLAID_SECRET=your_secret_key
+   PLAID_ENV=sandbox  # or development/production
+   ```
+
+4. **API Access Levels**
+   - **Sandbox**: Free, unlimited testing with mock data
+   - **Development**: Free, limited to 100 items
+   - **Production**: Requires approval, usage-based pricing
+
+5. **Production Access**
+   - Complete the [Plaid Production Access Form](https://dashboard.plaid.com/team/keys)
+   - Provide business details and use case
+   - Wait for approval (typically 1-2 business days)
+
 ### Backend Setup
 ```bash
 cd backend
@@ -251,33 +286,6 @@ npm run dev
 │   └── package.json
 └── .env.example
 ```
-
-## Security
-
-- Local data storage only
-- No cloud dependencies
-- Encrypted token storage
-- Environment-based configuration
-
-## Future Enhancements
-
-### AI Integration
-- Spending predictions
-- Investment recommendations
-- Pattern recognition
-
-### Technical Improvements
-- Blockchain storage option
-- Real-time data streaming
-- Advanced analytics
-
-## Contributing
-
-1. Fork the repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Create Pull Request
 
 ## License
 
