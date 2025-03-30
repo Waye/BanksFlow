@@ -11,6 +11,11 @@ A modern personal finance application built with FastAPI and Next.js that helps 
 - **Data Privacy**: All data stored locally for maximum security
 - **Future Plans**: AI-powered predictions and investment strategies
 
+## Demo
+
+Watch the application demo on YouTube:
+[![Personal Finance App Demo](https://img.youtube.com/vi/ePrXtQ0dkfE/maxresdefault.jpg)](https://www.youtube.com/watch?v=ePrXtQ0dkfE)
+
 ## Tech Stack
 
 ### Backend
