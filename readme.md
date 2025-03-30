@@ -1,4 +1,4 @@
-# Personal Finance Application
+# BankFlow
 
 A modern personal finance application built with FastAPI and Next.js that helps users track finances, analyze spending patterns, and make informed financial decisions through Plaid API integration.
 
@@ -14,7 +14,9 @@ A modern personal finance application built with FastAPI and Next.js that helps 
 ## Demo
 
 Watch the application demo on YouTube:
-[![Personal Finance App Demo](https://img.youtube.com/vi/ePrXtQ0dkfE/maxresdefault.jpg)](https://www.youtube.com/watch?v=ePrXtQ0dkfE)
+[![BankFlow Demo](https://img.youtube.com/vi/ePrXtQ0dkfE/maxresdefault.jpg)](https://www.youtube.com/watch?v=ePrXtQ0dkfE)
+
+> Note: A 10-second GIF demo would be added here once available.
 
 ## Tech Stack
 
@@ -130,7 +132,7 @@ plaid_client = plaid_api.PlaidApi(api_client)
 # Create link token for frontend
 request = LinkTokenCreateRequest(
     user={"client_user_id": "user123"},
-    client_name="Personal Finance App",
+    client_name="BankFlow",
     products=[Products("transactions")],
     country_codes=[CountryCode("US")],
     language="en"
